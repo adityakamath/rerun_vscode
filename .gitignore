@@ -1,0 +1,20 @@
+# Build output
+out
+*.vsix
+
+# Node modules
+node_modules
+
+# Editor
+.vscode-test/
+.vscode/
+
+# OS
+.DS_Store
+*.log
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
