@@ -1,13 +1,12 @@
 # Rerun Viewer for VSCode
 
-[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=rerun.rerun-viewer)
-[![Version](https://img.shields.io/badge/version-0.0.1-green)](https://github.com/yourusername/rerun-vscode)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=kamathsblog.rerun-viewer)
+[![Version](https://img.shields.io/badge/version-0.0.1-green)](https://github.com/adityakamath/rerun_vscode)
+[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](LICENSE)
 
-** Note: this implementation is vibe-coded, and mainly for personal use. 
+> **Note**: This extension was prototyped ("vibe coded") using AI for personal use but has been made public as it turned out to be quite useful for the community, and myself. Contributions and feedback are welcome!
 
 View [Rerun](https://rerun.io) recordings (`.rrd` files) directly in Visual Studio Code. The Rerun Viewer extension provides seamless integration of the Rerun visualization platform into your VSCode workflow, allowing you to visualize multimodal data, robotics recordings, and time-series data without leaving your editor.
-
-![Rerun Viewer in Action](https://raw.githubusercontent.com/yourusername/rerun-vscode/main/images/screenshot.png)
 
 ## Features
 
@@ -36,7 +35,7 @@ View [Rerun](https://rerun.io) recordings (`.rrd` files) directly in Visual Stud
 
 ### From VSIX File
 
-1. Download the `.vsix` file from [Releases](https://github.com/yourusername/rerun-vscode/releases)
+1. Download the `.vsix` file from [Releases](https://github.com/adityakamath/rerun_vscode/releases)
 2. Open VS Code
 3. Go to Extensions (`Cmd+Shift+X` on Mac, `Ctrl+Shift+X` on Windows/Linux)
 4. Click the `...` menu → "Install from VSIX..."
@@ -157,8 +156,8 @@ For a complete list of shortcuts, see the [Rerun documentation](https://www.reru
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/rerun-vscode.git
-cd rerun-vscode
+git clone https://github.com/adityakamath/rerun_vscode.git
+cd rerun_vscode
 
 # Install dependencies
 npm install
@@ -209,7 +208,7 @@ Please ensure your code follows the existing style and includes appropriate test
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/rerun-vscode/issues)
+- **Issues**: [GitHub Issues](https://github.com/adityakamath/rerun_vscode/issues)
 - **Rerun Documentation**: [rerun.io/docs](https://www.rerun.io/docs)
 - **Rerun Discord**: [Join the community](https://discord.gg/rerun)
 
@@ -229,4 +228,4 @@ This extension is dual-licensed under MIT OR Apache-2.0, matching Rerun's licens
 
 ---
 
-**Made with ❤️ by the Rerun community**
+**Made with ❤️ by [@kamathsblog](https://twitter.com/kamathsblog) (and [Claude](https://claude.ai)) for the Rerun community**
