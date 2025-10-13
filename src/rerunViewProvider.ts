@@ -41,29 +41,6 @@ export class RerunViewProvider implements vscode.CustomReadonlyEditorProvider {
                             vscode.window.showErrorMessage(`Failed to load file: ${error}`);
                         }
                         break;
-                    case 'selectFile':
-                        const uris = await vscode.window.showOpenDialog({
-                            canSelectMany: false,
-                            filters: {
-                                'Rerun files': ['rrd'],
-                                'URDF files': ['urdf'],
-                                'All supported files': ['rrd', 'urdf']
-                            },
-                            title: 'Select file to load'
-                        });
-                        if (uris && uris.length > 0) {
-                            try {
-                                const fileData = await vscode.workspace.fs.readFile(uris[0]);
-                                const base64Data = Buffer.from(fileData).toString('base64');
-                                webviewPanel.webview.postMessage({
-                                    type: 'loadData',
-                                    data: base64Data,
-                                });
-                            } catch (error) {
-                                vscode.window.showErrorMessage(`Failed to load file: ${error}`);
-                            }
-                        }
-                        break;
                     case 'connectToLive':
                         const url = await vscode.window.showInputBox({
                             prompt: 'Enter Rerun server URL or address (e.g., ws://localhost:9877)',

@@ -137,27 +137,6 @@ export function activate(context: vscode.ExtensionContext) {
                             vscode.window.showErrorMessage(`Failed to load file: ${error}`);
                         }
                         break;
-                    case 'selectFile':
-                        const uris = await vscode.window.showOpenDialog({
-                            canSelectMany: false,
-                            filters: {
-                                'Rerun files': ['rrd']
-                            },
-                            title: 'Select RRD file to load'
-                        });
-                        if (uris && uris.length > 0) {
-                            try {
-                                const fileData = await vscode.workspace.fs.readFile(uris[0]);
-                                const base64Data = Buffer.from(fileData).toString('base64');
-                                panel.webview.postMessage({
-                                    type: 'loadData',
-                                    data: base64Data,
-                                });
-                            } catch (error) {
-                                vscode.window.showErrorMessage(`Failed to load file: ${error}`);
-                            }
-                        }
-                        break;
                     case 'connectToLive':
                         const url = await vscode.window.showInputBox({
                             prompt: 'Enter Rerun server URL or address (e.g., ws://localhost:9877)',

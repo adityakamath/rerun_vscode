@@ -3,6 +3,8 @@
 [![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=rerun.rerun-viewer)
 [![Version](https://img.shields.io/badge/version-0.0.1-green)](https://github.com/yourusername/rerun-vscode)
 
+** Note: this implementation is vibe-coded, and mainly for personal use. 
+
 View [Rerun](https://rerun.io) recordings (`.rrd` files) directly in Visual Studio Code. The Rerun Viewer extension provides seamless integration of the Rerun visualization platform into your VSCode workflow, allowing you to visualize multimodal data, robotics recordings, and time-series data without leaving your editor.
 
 ![Rerun Viewer in Action](https://raw.githubusercontent.com/yourusername/rerun-vscode/main/images/screenshot.png)
