@@ -2,6 +2,14 @@
 
 All notable changes to the "Rerun Viewer" extension will be documented in this file.
 
+## [0.0.2] - 2026-03-15
+
+### Updated
+
+- **Rerun Web Viewer** upgraded from `0.25.1` to `0.30.2`
+- **Live connection**: updated default URL from WebSocket (`ws://localhost:9877`) to gRPC (`rerun+http://127.0.0.1:9876/proxy`), matching the protocol change in Rerun ≥ 0.21
+- **Viewer theme**: explicitly sets dark theme to match VS Code's default appearance
+
 ## [0.0.1] - 2025-01-XX
 
 ### Initial Release

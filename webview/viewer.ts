@@ -21,6 +21,7 @@ async function initViewer() {
             enable_history: true,
             allow_fullscreen: false,
             render_backend: 'webgpu',
+            theme: 'dark',
             width: '100%',
             height: '100%',
             base_url: WEBVIEW_BASE_URI

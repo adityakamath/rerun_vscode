@@ -43,9 +43,9 @@ export class RerunViewProvider implements vscode.CustomReadonlyEditorProvider {
                         break;
                     case 'connectToLive':
                         const url = await vscode.window.showInputBox({
-                            prompt: 'Enter Rerun server URL or address (e.g., ws://localhost:9877)',
-                            placeHolder: 'ws://localhost:9877',
-                            value: 'ws://localhost:9877'
+                            prompt: 'Enter Rerun gRPC URL (e.g., rerun+http://127.0.0.1:9876/proxy)',
+                            placeHolder: 'rerun+http://127.0.0.1:9876/proxy',
+                            value: 'rerun+http://127.0.0.1:9876/proxy'
                         });
                         if (url) {
                             webviewPanel.webview.postMessage({

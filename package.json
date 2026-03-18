@@ -2,7 +2,7 @@
   "name": "rerun-viewer",
   "displayName": "Rerun Viewer",
   "description": "View Rerun .rrd recordings directly in Visual Studio Code with full timeline, 3D, and multimodal data visualization",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "kamathsblog",
   "engines": {
     "vscode": "^1.85.0"
@@ -66,13 +66,13 @@
   "devDependencies": {
     "@types/node": "^20.x",
     "@types/vscode": "^1.85.0",
-    "@typescript-eslint/eslint-plugin": "^6.x",
-    "@typescript-eslint/parser": "^6.x",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
     "esbuild": "^0.25.10",
-    "eslint": "^8.x",
+    "eslint": "^9.39.4",
     "typescript": "^5.3.0"
   },
   "dependencies": {
-    "@rerun-io/web-viewer": "^0.25.1"
+    "@rerun-io/web-viewer": "^0.30.2"
   }
 }
