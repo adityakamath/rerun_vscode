@@ -1,7 +1,6 @@
 import { WebViewer } from '@rerun-io/web-viewer';
 
 declare const acquireVsCodeApi: () => any;
-declare const WEBVIEW_BASE_URI: string;
 
 const vscode = acquireVsCodeApi();
 let viewer: WebViewer | null = null;
@@ -23,9 +22,8 @@ async function initViewer() {
             render_backend: 'webgpu',
             theme: 'dark',
             width: '100%',
-            height: '100%',
-            base_url: WEBVIEW_BASE_URI
-        } as any);
+            height: '100%'
+        });
         console.log('Rerun viewer started successfully');
 
         // Listen for selection changes

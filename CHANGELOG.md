@@ -2,6 +2,14 @@
 
 All notable changes to the "Rerun Viewer" extension will be documented in this file.
 
+## [0.0.3] - 2026-06-28
+
+### Updated
+
+- **Rerun Web Viewer** upgraded from `0.30.2` to `0.33.1`
+- Removed a dead `base_url` option that was never part of the public `WebViewerOptions` API (was silently ignored)
+- Migrated ESLint config from legacy `.eslintrc.json` to the flat `eslint.config.js` format required by ESLint 9
+
 ## [0.0.2] - 2026-03-15
 
 ### Updated
